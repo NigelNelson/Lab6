@@ -1,0 +1,26 @@
+BenchMarking:
+
+time to execute:
+
+(3x3.txt, words.txt) using SortedArrayList: 0.103272208 seconds
+(3x3.txt, words.txt) using ArrayListIndexed: 0.200611591 seconds
+(3x3.txt, words.txt) using LinkedListIterated: 0.243228559 seconds
+
+(4x4.txt, words.txt) using SortedArrayList: 3.424532679 seconds
+(4x4.txt, words.txt) using ArrayListIndexed: 16.964256685 seconds
+(4x4.txt, words.txt) using LinkedListIterated: 40.036602589 seconds
+
+Rational:
+
+Only the 3x3 and 4x4 grids were ran because a clear pattern of which methods were
+the fastest can be determined from just these two grids. Only these three methods
+were chosen because a ArrayListListIterated and a LinkedListIndexed would be
+significantly slower and their lack of speed was already established in lab01.
+
+Conclusion:
+
+From this benchmarking it can be concluded that from this given scenario of having to
+loop through an existing list, an Indexed ArrayList is faster than an Enhanced 
+LinkedList. However, a SortedArrayList that uses binary search is significantly
+faster than both of the previous options because it has to check significantly
+less Objects than the other two methods.
